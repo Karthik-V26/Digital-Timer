@@ -9,7 +9,12 @@ class DigitalTimer extends Component {
     choosedTime: 25,
     clearId: '',
   }
-
+  
+  componentWillUnmount() {
+    const {clearId} = this.state
+    clearInterval(clearId)
+  }
+  
   starting = splitedTime => {
     let ti = parseInt(splitedTime[0], 10) * 60 + parseInt(splitedTime[1], 10)
     const id = setInterval(() => {
