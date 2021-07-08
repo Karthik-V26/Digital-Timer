@@ -1,0 +1,114 @@
+.bg {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  width: 60%;
+  padding: 10px;
+  height: 100vh;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+}
+.display-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.background-display {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 350px;
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display-time {
+  border-radius: 68px;
+  background-color: #ffffff;
+  padding: 2px;
+  width: 140px;
+  height: 140px;
+}
+.time {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: 600;
+  color: #00d9f5;
+  text-align: center;
+}
+.status-text {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 400;
+  color: #0f172a;
+  text-align: center;
+}
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+.operation {
+  display: flex;
+  flex-direction: row;
+}
+.operation-text {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 400;
+  color: #0f172a;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  align-self: center;
+}
+.limit-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: #0f172a;
+}
+.plus-minus-container {
+  display: flex;
+  flex-direction: row;
+}
+.plus-minus-display-text {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 400;
+  color: #0f172a;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  background-image: linear-gradient(to right, #cffcf1, #defafe, #00d9f5);
+  padding: 2px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.plus-minus-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+}
+@media all and min-width=768px {
+  .display-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
